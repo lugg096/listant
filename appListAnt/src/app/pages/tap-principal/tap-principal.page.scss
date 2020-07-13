@@ -1,0 +1,40 @@
+.header {
+    height: 50px;
+    padding: auto;
+    --background: #fafafa;
+}
+
+.header-01 {
+    height: 20px;
+}
+
+.titulo {
+    transform: translateX(18px);
+    font-size: 30px;
+    font-family: "Brush Script MT", cursive;
+}
+
+.avatarPerfil {
+    width: 30px;
+    height: 30px;
+}
+
+.tabs {
+    --color: rgba(255, 255, 255, 0.527) !important;
+    --background: #34cc8c;
+}
+
+.lineSelect {
+    border-bottom: white solid 5px;
+}
+
+.tab-button[aria-selected="true"] {
+    color: #fff !important;
+}
+
+.text-tab {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+

@@ -1,0 +1,104 @@
+
+
+<ion-content style="--padding-bottom: 50px;">
+  <!-- Cards -->
+  <ion-toolbar class="mt-2">
+    <div class="row ">
+      <div class="col-11">
+        <ion-searchbar inputmode="text" placeholder="Busca" mode="ios" animated class="searchBar pb-0">
+        </ion-searchbar>
+      </div>
+      <div class="col-1 px-0 mx-0 ">
+        <ion-icon name="cart-outline" class="iconCard mb-0 pb-0"></ion-icon>
+        <ion-badge class="badge-cantidad-pedidos">18</ion-badge>
+      </div>
+    </div>
+    <ion-segment scrollable value="heart" style="margin-top: -22px;">
+      <ion-segment-button value="igtv">
+        <ion-button class="buttonCategories">
+          <ion-icon color="dark" size="small" name="medkit"></ion-icon>
+          <ion-label color="dark ml-1"> Medicina</ion-label>
+        </ion-button>
+
+      </ion-segment-button>
+      <ion-segment-button value="Tienda">
+        <ion-button class="buttonCategories">
+          <ion-icon color="dark" size="small"  name="fast-food"></ion-icon>
+          <ion-label color="dark ml-1"> Alimentos</ion-label>
+        </ion-button>
+      </ion-segment-button>
+
+      <ion-segment-button value="decoracion">
+        <ion-button class="buttonCategories">
+          <ion-icon color="dark" size="small"  name="shirt"></ion-icon>
+          <ion-label color="dark ml-1"> Ropa</ion-label>
+        </ion-button>
+      </ion-segment-button>
+
+      <ion-segment-button value="arquitectura">
+        <ion-button class="buttonCategories">
+          <ion-icon  color="dark" size="small" name="paw"></ion-icon>
+          <ion-label color="dark ml-1"> Mascotas</ion-label>
+        </ion-button>
+      </ion-segment-button>
+
+      <ion-segment-button value="comida">
+        <ion-button class="buttonCategories">
+          <ion-label color="dark"> Comida</ion-label>
+        </ion-button>
+      </ion-segment-button>
+
+
+      <ion-segment-button value="arte">
+        <ion-button class="buttonCategories">
+          <ion-label color="dark"> Arte</ion-label>
+        </ion-button>
+      </ion-segment-button>
+
+
+      <ion-segment-button value="estilo">
+        <ion-button class="buttonCategories">
+          <ion-label color="dark"> Estilo</ion-label>
+        </ion-button>
+      </ion-segment-button>
+
+      <ion-segment-button value="musica">
+        <ion-button class="buttonCategories">
+          <ion-label color="dark"> Música</ion-label>
+        </ion-button>
+      </ion-segment-button>
+
+
+    </ion-segment>
+  </ion-toolbar>
+
+  <ion-card *ngFor="let card of avatares">
+    <ion-card-content >
+      <ion-item button lines="none">
+        <ion-thumbnail slot="start">
+          <samp class="" ></samp>
+          <img src="../../../assets/images/baner04.PNG" class="img-producto" [routerLink]="['/producto-detalle']">
+          <ion-button expand="block" class="boton-solicitar" [routerLink]="['/producto-detalle']"><ion-icon name="cart-outline"></ion-icon> Solicitar</ion-button>
+        </ion-thumbnail>
+        
+    
+        <ion-label class="datos-producto"  [routerLink]="['/producto-detalle']">
+          <ion-text color="dark" class="ion-text-wrap">
+            <span class="nombre-producto ">Pechuga de Pollo</span>
+            <br>
+            <p class="marca-producto">San Fernando</p>
+            <p class="descripcion-producto">Fecha limite para hacer pedidos hasta el día 02 Junio.</p>
+          </ion-text>
+          <div class="monto">
+            <p class="text-fecha-limite ion-text-wrap">Fecha entrega el 08 de Julio </p>
+            <p class="descripcion-producto ">Precio x kilo</p>
+            <samp class="simbolo-moneda">s/</samp><samp class="precio">4.99</samp> 
+          </div>
+        </ion-label>
+        
+      </ion-item>
+    
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

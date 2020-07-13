@@ -1,0 +1,66 @@
+ion-header ion-toolbar {
+    --background: #fff;
+    height: 6vh;
+}
+.title {
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.line {
+    height: 1px;
+    background: #000;
+    opacity: 0.1;
+}
+
+.nombreUsuarioCard {
+    font-weight: 600;
+}
+
+.avatar-notification {
+    margin-left: -15px;
+}
+
+.avatar-thumbnail {
+    margin-right: -15px;
+}
+
+.avatar-text {
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.responder-notificacion {
+    font-size: 11px;
+}
+.icon-coment{
+    transform: translateY(2px);
+}
+
+.avatar-button {
+    margin-right: -15px;
+}
+
+.image-notification{
+    height: 45px;
+    width: auto;
+}
+
+.text-button{
+    font-size: 11px;
+    font-weight: 500px;
+    padding: 2px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.span-sugerencias{
+    font-size: 11px;
+}
+
+.icon-sugerencias{
+    font-size: 16px;
+    margin-right: -14px;
+    margin-left: 28px;
+}

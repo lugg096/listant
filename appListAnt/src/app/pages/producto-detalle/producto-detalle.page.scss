@@ -1,0 +1,240 @@
+.marca-producto {
+    color: #868686;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nombre-producto {
+    color: #2c3e44;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.condominio {
+    color: #868686;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.marca-condominio {
+    margin-top: -15px;
+}
+
+.separador {
+    color: #2c3e44;
+    font-size: 14px;
+}
+
+.icon-back {
+    padding-left: 10px;
+    padding-top: 15px;
+    color: #2c3e44;
+    font-size: 26px;
+}
+
+.img-producto {
+    margin-top: -40px;
+}
+
+.text-badge {
+    background: #fcdc04;
+    padding: 8px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+    transform: translateX(-140px);
+    border-radius: 15% 0%;
+}
+
+.simbolo-moneda {
+    font-size: 25px;
+}
+
+.precio {
+    font-size: 35px;
+}
+
+.monto {
+    color: #e7484f;
+    font-weight: 700;
+    margin-top: 20px;
+    line-height: 0.9;
+}
+
+
+.descripcion-cantidad {
+    color: #e7484f;
+    font-weight: 800;
+    font-size: 14px;
+    padding-left: 20%;
+}
+
+.boton-solicitar {
+    --background: #34cc8c;
+    text-transform: capitalize;
+    height: 45px;
+    font-size: 16px;
+}
+
+.descripcion-producto{
+    color: #868686;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.entrega{
+    color: #868686;
+    font-size: 11px;
+    margin-top: 20px;
+    line-height: 1.0;
+    font-weight: 600;
+}
+
+.text-fecha-entrega{
+    
+    color: #40aadd;
+    
+}
+
+.text-sub{
+    color: #2c3e44;
+}
+
+.text-tipo-entrega{
+    margin-top: 10px;
+    color: #2c3e44;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.text-tipo-pago{
+    margin-top: 10px;
+    color: #2c3e44;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.tipo-pago{
+    color: #868686;
+    font-size: 11px;
+    margin-top: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.icon-departamento{
+    font-size: 30px;
+}
+
+.icon-tipo{
+    transform: translateY(-4px);
+    margin: auto;
+    text-align: center;
+    width: 80px;
+}
+
+.avatar-vendedor {
+    margin-left: -10px;
+}
+
+.avatar-text {
+    font-size: 12px;
+    line-height: 1.0;
+}
+
+.nombreUsuarioCard {
+    font-weight: 600;
+}
+
+.badge-whatsap{
+    border-radius: 100%;
+    padding: 5px;
+    padding-bottom: 3px;
+}
+
+.text-avatar-condominio{
+    color: #868686;
+    font-size: 10px;
+    line-height: 0.8;
+}
+
+.line {
+    height: 0.5px;
+    background: #000;
+    opacity: 0.09;
+}
+
+.icon-social{
+    transform: translateY(6px);
+    font-size: 20px;
+}
+
+.text-compartir{
+    font-size: 11px;
+    color:  #34cc8c;
+}
+
+
+
+
+/* Recomendaciones */
+.img-producto-recomend{
+    margin-top: -25px;
+}
+
+ion-thumbnail{
+    margin-left: -14px;
+    height: 130px;
+    width: 130px;
+}
+
+
+.boton-solicitar-recomend{
+    --background: #34cc8c;
+    --border-radius: 50px;
+    text-transform: capitalize;
+    font-weight:600;
+    font-size: 13px;
+}
+
+.datos-producto{
+    margin-top: -8px;
+}
+
+.nombre-producto-recomend {
+    color: #2c3e44;
+    font-size: 13px;
+    font-weight:700;
+}
+
+.marca-producto-recomend{
+    margin-top: 8px;
+    color: #868686;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.text-fecha-limite{
+    font-size: 10px;
+    color: #40aadd;
+    font-weight: 600;
+}
+
+.simbolo-moneda-recomend{
+    font-size: 12px;
+}
+.precio-recomend{
+    font-size: 17px;
+}
+.slide-recomend{
+    padding-bottom: 30px;
+}
+
+.text-recomend {
+    margin-top: 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}

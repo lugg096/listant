@@ -1,0 +1,103 @@
+<ion-header class="ion-no-border">
+
+  <ion-toolbar>
+
+    <ion-item button lines="none" class="pr-0 title-group" style="--background: #34cc8c;">
+
+      <ion-buttons slot="start" class="backPage">
+        <ion-back-button defaultHref="listgroup" [routerLink]="['/tap-principal/listgroup']"></ion-back-button>
+      </ion-buttons>
+
+      <ion-avatar slot="start">
+        <img src="../../../assets/images/user01.png" alt="...">
+      </ion-avatar>
+      <ion-label>
+
+        <div class="row">
+          <div class="col-10">
+            <ion-text color="dark" class="ion-text-wrap" style="color: white;">
+              <span class="nombreGrupo">Polos para Navidad</span>
+              <p class="avatar-text">Se necesitan minimo 12 personas...</p>
+            </ion-text>
+          </div>
+
+          <div class="col-2 px-0">
+            <ion-text color="dark" class="ion-text-wrap ion-text-center text-publicaciones" style="color: white;">
+              <p class="text-top">200</p>
+              <small class="text-botton">Users</small>
+            </ion-text>
+          </div>
+        </div>
+
+      </ion-label>
+    </ion-item>
+
+
+    <div class="row header-border">
+      <ion-searchbar inputmode="text" placeholder="Busca" mode="ios" animated class="searchBar mb-0 pb-0">
+      </ion-searchbar>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="person-add" style="font-size: 20px;"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+  <ion-list class="mb-5">
+
+    <ion-item-sliding *ngFor="let user of Users">
+      <ion-item href="#">
+        <ion-avatar slot="start" class="avatarGroup">
+          <img src="../../../assets/images/user01.png" alt="...">
+        </ion-avatar>
+        <ion-label style="padding-right: 10px;">
+
+          <div class="row">
+            <div class="col-10">
+              <ion-text color="dark" class="ion-text-wrap">
+                <span class="nombreUser">Reiko Tapia</span>
+                <p class="avatar-text">Si es posible comprar 2 unidades más.</p>
+                <!-- <p class="avatar-text"><span class="text-muted">Valido hasta 26/07/2020</span></p> -->
+              </ion-text>
+            </div>
+
+            <div class="col-2 px-0">
+              <ion-text color="dark" class="ion-text-wrap ion-text-center text-publicaciones">
+                <p class="text-top">10</p>
+                <small class="text-botton">Unid.</small>
+              </ion-text>
+            </div>
+          </div>
+
+        </ion-label>
+        <ion-note slot="end" class="ml-0">
+          10:45 AM
+        </ion-note>
+      </ion-item>
+
+      <ion-item-options side="start">
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+
+      <ion-item-options side="end">
+
+        <ion-item-option>
+          <ion-icon slot="icon-only" name="create"></ion-icon>
+        </ion-item-option>
+        <ion-item-option color="danger">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,170 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>producto-detalle</ion-title>
+  </ion-toolbar>
+ 
+</ion-header>
+<ion-buttons slot="start" class="backPage">
+
+  <ion-back-button defaultHref="listgroup" [routerLink]="['/tap-principal/search-groups']"></ion-back-button>
+</ion-buttons> -->
+<ion-content>
+  <div class="row mt-4">
+    <div class="col-2" [routerLink]="['/tap-principal/search-groups']">
+      <ion-icon name="chevron-back-outline" class="icon-back"> </ion-icon>
+    </div>
+    <div class="col-10 pl-0 pr-5 text-center">
+      <p class="nombre-producto">Palta Hass La Chila x kg</p>
+      <p class="marca-condominio"> <span class="marca-producto">La Chilca </span><span class="separador">|</span> <span
+          class="condominio"> Condominio Las Gabiotas</span></p>
+    </div>
+  </div>
+
+  <!--   <div>
+    <ion-badge color="warning" class="text-badge">-15%</ion-badge>
+    <img src="../../../assets/images/baner04.PNG" class="img-producto" [routerLink]="['/producto-detalle']">
+
+  </div> -->
+
+  <div>
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide *ngFor="let img of producto">
+        <div>
+          <ion-badge class="text-badge">-15%</ion-badge>
+          <img src="../../../assets/images/baner04.PNG" class="img-producto" [routerLink]="['/producto-detalle']">
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+
+  <div class=" px-2">
+    <div class="row">
+      <div class="col-6 entrega">
+        <p class="ion-text-wrap"> <span class="text-sub"> Promoción</span> <br> Hasta el 15 de Julio </p>
+        <p class="ion-text-wrap"><span class="text-sub">Entrega </span> <br> Fecha entrega el<span
+            class="text-fecha-entrega"> 20 de Julio</span> <br>
+        </p>
+      </div>
+      <div class="col-6 text-center monto">
+        <samp class="simbolo-moneda">s/</samp><samp class="precio">14.90</samp> <br>
+        <samp class="descripcion-cantidad"> x kilo</samp>
+      </div>
+    </div>
+
+
+    <div>
+      <ion-button expand="block" class="boton-solicitar">
+        <ion-icon name="cart-outline"></ion-icon> Solicitar
+      </ion-button>
+    </div>
+
+    <div class="text-compartir text-center">
+      <span>
+        <ion-icon name="heart-outline" class="icon-social"></ion-icon> Agregar a favoritos
+      </span>
+     
+      <span class="ml-3">
+        <ion-icon name="share-social" class="icon-social"></ion-icon> Compartir
+      </span>
+
+     
+    </div>
+
+
+    <hr class="line">
+
+    <div class="entrega">
+      <p class="text-sub"> Descripción del producto <br>
+        <span class="descripcion-producto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi massa
+          massa,ornare ac ultricies eget, ultrices quis ex. Phasellus posuere ullamcorper tellus dictum eleifend.
+          Curabitur ac
+          ipsum rutrum, hendrerit sem vel, mattis dui. </span> </p>
+    </div>
+
+    <hr class="line">
+
+    <div>
+      <ion-item  lines="none">
+        <ion-avatar slot="start" class="avatar-vendedor">
+          <img src="../../../assets/images/user01.png">
+        </ion-avatar>
+        <ion-label >
+          <ion-text color="dark" class="ion-text-wrap ">
+            <p class="avatar-text"><span class="nombreUsuarioCard">Luiggi Vargas</span> <br>
+              <span class="text-avatar-condominio">Condominio las Gabiotas <br> CHORRILLOS</span></p>
+          </ion-text>
+        </ion-label>
+        <ion-badge slot="end" color="success" class="ml-4 badge-whatsap" style="font-size: 24px;"
+          [routerLink]="[ '/listuser' ]">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </ion-badge>
+      </ion-item>
+    </div>
+
+    <hr class="line">
+
+    <div>
+      <img src="../../../assets/images/pagos.PNG">
+    </div>
+    <div class="tipo-pago">
+      <p class="text-tipo-entrega ion-text-wrap mb-1">Formas de pago</p>
+      Yape: 966350303 <br>
+      Tranferencia BCP: 19197430930179 <br>
+      Tranferencia Bbva: 001101790200497168 <br>
+    </div>
+    <div class="tipo-pago row">
+      <p class=" col-12 text-tipo-entrega ion-text-wrap mb-1">Forma de entrega</p>
+      <div class="col-9">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi massa massa,
+        ornare ac ultricies eget, ultrices quis ex.
+      </div>
+
+      <div class="icon-tipo col-3 pl-0">
+        <ion-icon name="business-outline" class="icon-departamento"></ion-icon> <br>
+        <span class="ion-text-wrap" style="font-size: 10px;">A depart.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-4 mt-4 px-2">
+    <p class="ion-text-wrap mb-2" style="font-size: 14px;"> Productos <span class="text-recomend">que te pueden
+        interesar</span> </p>
+
+    <ion-slides pager="true" [options]="slideOpts">
+
+      <ion-slide class="slide-recomend" pager="true" *ngFor="let producto of productosRecomend">
+        <ion-item button lines="none">
+          <ion-thumbnail slot="start">
+            <samp class=""></samp>
+            <img src="../../../assets/images/baner04.PNG" class="img-producto-recomend"
+              [routerLink]="['/producto-detalle']">
+            <ion-button expand="block" class="boton-solicitar-recomend">
+              <ion-icon name="cart-outline"></ion-icon> Solicitar
+            </ion-button>
+          </ion-thumbnail>
+
+
+          <ion-label class="datos-producto" [routerLink]="['/producto-detalle']">
+            <ion-text color="dark" class="ion-text-wrap">
+              <span class="nombre-producto-recomend">Pechuga de Pollo</span>
+              <br>
+              <p class="marca-producto-recomend">San Fernando</p>
+              <p class="descripcion-producto">Fecha limite para hacer pedidos hasta el día 02 Junio.</p>
+            </ion-text>
+            <div class="monto">
+              <p class="text-fecha-limite ion-text-wrap">Fecha entrega el 08 de Julio </p>
+              <p class="descripcion-producto ">Precio x kilo</p>
+              <samp class="simbolo-moneda-recomend">s/</samp><samp class="precio-recomend">4.99</samp>
+            </div>
+          </ion-label>
+
+        </ion-item>
+      </ion-slide>
+    </ion-slides>
+
+
+  </div>
+
+
+</ion-content>

@@ -1,0 +1,44 @@
+
+
+
+
+<ion-header class="ion-no-border">
+  <ion-toolbar class=" header">
+    <div class="row">
+    
+      <div class="col-10 titulo">
+        ListAnt
+      </div>
+      <div class="col-1  mt-2">
+        <ion-avatar class="avatarPerfil" slot="start">
+          <img src="../../../assets/images/user01.png">
+        </ion-avatar>
+      </div>
+    </div>
+  </ion-toolbar>
+
+ 
+</ion-header >
+
+
+<ion-tabs  style="margin-top: 50px;" #myTabs (ionTabsDidChange)="getSelectedTab()">
+  <ion-tab-bar slot="top" class="tabs">
+    <ion-tab-button tab="listgroup" class="tab-button" >
+      <ion-icon name="people-circle" ></ion-icon>
+      <ion-label class="text-tab">GRUPOS</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="search-groups" class="tab-button">
+      <ion-icon name="search" ></ion-icon>
+        <ion-label class="text-tab">BUSCAR</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="notification" class="tab-button">
+      <ion-icon name="notifications" ></ion-icon>
+      <ion-label class="text-tab">NOTIFICACIONES</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+
+</ion-tabs>

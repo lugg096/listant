@@ -1,0 +1,157 @@
+.text-list {
+    color: #868686;
+    font-size: 9px;
+    line-height: 1.2;
+}
+
+.searchBar {
+    --background: #fff;
+}
+
+ion-content {
+    --background: #fafafa;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.recomendaciones {
+    padding: 20px;
+    transform: translateY(45px);
+}
+
+.imageRecomendaciones {
+    img {
+        height: 110px;
+        width: 110px;
+        border-radius: 8%;
+    }
+
+    margin-left: 5px;
+}
+
+.texto-story {
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.text-subTitle {
+    color: #2c3e44;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.text-more {
+    color: #2ead78;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.badge-text {
+    margin-top: 8px;
+    font-size: 12px;
+    background: #f4f4f4;
+    color: #b4b4b4;
+}
+
+.badge-comentarios {
+    margin-left: 60px;
+    transform: translateY(-90px);
+    border-radius: 50%;
+    font-size: 11px;
+    background: #2ead78;
+    color: #fff;
+}
+
+.sidebar-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 0;
+    width: 110px;
+    text-align: center;
+    margin: 0;  
+    padding: 35px 0;
+    
+   
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    background-image: linear-gradient(to bottom, transparent, black);
+
+}
+
+.title-image-recomendaciones{
+     transform: translateY(15px);
+    font-size: 12px;
+    font-weight: 600;
+    color:#fff;
+    
+
+}
+
+.usuario-image-recomendaciones{
+    
+    font-size: 10px;
+    
+    color:#00da7f;
+}
+
+.mover{
+    text-align: center;
+    margin-left:13px ;
+    transform: translateY(-33px);
+}
+
+ion-thumbnail{
+    height: 85px;
+    width: 85px;
+}
+.img-group{
+    margin-top: -7px;
+}
+
+.img-group{
+    margin-top: -7px;
+}
+
+.text-estadisticas-list{
+    color: #868686;
+    font-size: 9px;
+    transform: translateY(-7px);
+}
+
+.text-estadisticas-list-venta{
+    color: #868686;
+    font-size: 9px;
+    transform: translateY(-15px);
+}
+
+.text-estadisticas-list-pago{
+    color: #868686;
+    font-size: 9px;
+    transform: translateY(-8px);
+}
+.group-estadisticas{
+    transform: translateX(-12px);
+}
+
+/* .pedidos{
+    transform: translateY(-12px);
+} */
+
+.badge-whatsap{
+    border-radius: 100%;
+    padding: 5px;
+    padding-bottom: 3px;
+}
+
+.text-badge-ventas{
+    font-size: 11px;
+    transform: translateY(-10px);
+}
+
+

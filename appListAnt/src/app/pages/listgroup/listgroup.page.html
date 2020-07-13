@@ -1,0 +1,466 @@
+<ion-content style="transform: translateY(-50px);">
+
+  <div class="recomendaciones">
+    <!-- Ultimas Grupos Creados -->
+    <div class="row">
+      <p class="text-subTitle col-8 etxt">Recomendaciones </p>
+      <a class="text-more col-4" [routerLink]="['/tap-principal/search-groups']">Ver más <ion-icon
+          name="chevron-forward-outline" style="font-size: 14px;transform: translateY(3px);"></ion-icon></a>
+    </div>
+    <div class="row px-2">
+
+      <div class="col-4 ">
+        <div class="row ">
+          <div class="col-12 px-0 sidebar-box">
+            <div class="imageRecomendaciones">
+              <img src="../../../assets/images/baner01.jpg">
+              <div class="read-more">
+              </div>
+            </div>
+
+          </div>
+          <div class="mover texto-story ion-text-wrap" style="line-height: 1.0;">
+            <span class="title-image-recomendaciones">Carne 20 fresca</span><br>
+            <span class="usuario-image-recomendaciones">Luiggi Vargas </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row">
+          <div class="col-12 px-0 sidebar-box">
+            <div class="imageRecomendaciones">
+              <img src="../../../assets/images/baner02.PNG">
+              <div class="read-more">
+              </div>
+
+            </div>
+          </div>
+          <div class="mover texto-story ion-text-wrap" style="line-height: 1.0;">
+            <span class="title-image-recomendaciones">Carne 20 fresca</span><br>
+            <span class="usuario-image-recomendaciones">Luiggi Vargas </span>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row">
+
+          <div class="col-12 px-0 sidebar-box">
+            <div class="imageRecomendaciones">
+              <img src="../../../assets/images/baner03.PNG">
+              <div class="read-more">
+              </div>
+            </div>
+          </div>
+
+          <div class="mover texto-story ion-text-wrap" style="line-height: 1.0;">
+            <span class="title-image-recomendaciones">Carne 20 fresca</span><br>
+            <span class="usuario-image-recomendaciones">Luiggi Vargas </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button style="--background: #34cc8c;">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div class="contenido">
+
+    <!-- Lista de Grupos -->
+    <div class="row">
+      <p class="text-subTitle col-8">Mis Ventas</p>
+    </div>
+
+    <!--  <div class="row">
+      <ion-searchbar inputmode="text" placeholder="Busca" mode="ios" animated class="searchBar">
+      </ion-searchbar>
+    </div> -->
+
+    <div class="card" class="ion-no-border pb-5">
+
+      <ion-item-sliding>
+        <ion-item button lines="none"  [routerLink]="['/listuser']">
+          <ion-thumbnail slot="start">
+            <img src="../../../assets/images/baner03.PNG" class="img-group">
+            <ion-badge class="badge-comentarios">18</ion-badge>
+          </ion-thumbnail>
+
+          <ion-label>
+            <ion-text color="dark" class="ion-text-wrap">
+              <span class="text-subTitle">Pechuga de Pollo</span>
+              <p class="text-list">Fecha limite para hacer pedidos hasta el día 2 Junio 2020.</p>
+            
+              <ion-note class="text-list mx-0 text-rigth">
+                <b>Entrega en 5 días</b>
+              </ion-note>
+            </ion-text>
+  
+            <div class="row" style="margin-top: 5px;">
+              <div class="col-4 px-0 text-center">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p><b>42</b>  kg</p>
+                  <p class="text-estadisticas-list mx-0 text-rigth">
+                    Cant.
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p><b>83</b> </p>
+                  <p class="text-estadisticas-list mx-0text-rigth">
+                    Pedidos
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>
+                    <ion-badge color="danger" style="font-size: 12px;">15 </ion-badge>
+                  </p>
+                  <p class="text-estadisticas-list-pago mx-0 text-rigth">
+                    Pagos pendientes
+                  </p>
+                </ion-text>
+              </div>
+            </div>
+          </ion-label>
+        </ion-item>
+
+        <ion-item-options side="end">
+          <ion-item-option color="primary">
+            <ion-icon slot="icon-only" name="share-social"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+
+      <ion-item-sliding>
+        <ion-item button lines="none"  [routerLink]="['/listuser']">
+          <ion-thumbnail slot="start">
+            <img src="../../../assets/images/baner03.PNG" class="img-group">
+            <ion-badge class="badge-comentarios">18</ion-badge>
+          </ion-thumbnail>
+
+          <ion-label>
+            <ion-text color="dark" class="ion-text-wrap">
+              <span class="text-subTitle">Pechuga de Pollo</span>
+              <p class="text-list">Fecha limite para hacer pedidos hasta el día 2 Junio 2020.</p>
+            
+              <ion-note class="text-list mx-0 text-rigth">
+                <b>Entrega en 5 días</b>
+              </ion-note>
+            </ion-text>
+  
+            <div class="row" style="margin-top: 5px;">
+              <div class="col-4 px-0 text-center">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p><b>42</b>  kg</p>
+                  <p class="text-estadisticas-list mx-0 text-rigth">
+                    Cant.
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p><b>83</b> </p>
+                  <p class="text-estadisticas-list mx-0text-rigth">
+                    Pedidos
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>
+                    <ion-badge color="danger" style="font-size: 12px;">15 </ion-badge>
+                  </p>
+                  <p class="text-estadisticas-list-pago mx-0 text-rigth">
+                    Pagos pendientes
+                  </p>
+                </ion-text>
+              </div>
+            </div>
+          </ion-label>
+        </ion-item>
+
+        <ion-item-options side="end">
+          <ion-item-option color="primary">
+            <ion-icon slot="icon-only" name="share-social"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+
+
+    </div>
+
+
+
+    <!-- Lista de Grupos -->
+    <div class="row">
+      <p class="text-subTitle col-8">Mis pedidos</p>
+    </div>
+
+    <!--  <div class="pb-5">
+      <div class="card" class=" ion-no-border ">
+        <ion-item button lines="none">
+          <ion-thumbnail slot="start">
+            <img src="../../../assets/images/baner03.PNG" alt="...">
+         
+          </ion-thumbnail>
+          <ion-label>
+            <ion-text color="dark" class="ion-text-wrap">
+              <span class="text-subTitle">Pechuga de Pollo</span>
+              <br>
+              <ion-note class="text-list mx-0 mt-1 text-rigth">
+                <b>Entrega en 5 días</b>
+              </ion-note>
+            </ion-text>
+
+            <div class="row" style="margin-top: 5px;">
+              <div class="col-4 px-0 text-center">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>3 kg</p>
+                  <p class="text-estadisticas-list mx-0 text-rigth">
+                    Cant.
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>S/.10</p>
+                  <p class="text-estadisticas-list mx-0text-rigth">
+                    Precio
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>
+                    <ion-badge color="primary" style="font-size: 8px;">Pagado </ion-badge>
+                  </p>
+                  <p class="text-estadisticas-list mx-0 text-rigth">
+                    Pago
+                  </p>
+                </ion-text>
+              </div>
+            </div>
+
+          </ion-label>
+          <ion-badge slot="end" color="success" class="ml-4 badge-whatsap" style="font-size: 24px;"
+            [routerLink]="[ '/listuser' ]">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </ion-badge>
+        </ion-item>
+      </div>
+    </div> -->
+
+    <div class="card" class="ion-no-border pb-5">
+      <ion-item-sliding>
+        <ion-item button lines="none">
+          <ion-thumbnail slot="start">
+            <img src="../../../assets/images/baner03.PNG" class="img-group">
+            <!--  <ion-badge class="badge-comentarios">18</ion-badge> -->
+          </ion-thumbnail>
+
+          <ion-label>
+            <ion-text color="dark" class="ion-text-wrap">
+              <span class="text-subTitle">Pechuga de Pollo</span>
+              <p class="text-list">Lorem ipsum dolor sit amet. Pellentesque eget arcu eget
+                orci placerat vulputate eu et justo.</p>
+              <ion-note class="text-list mx-0 text-rigth">
+                <b>Entrega en 5 días</b>
+              </ion-note>
+            </ion-text>
+
+            <!-- Estadisticas -->
+            <div class="row" style="margin-top: 5px;">
+              <div class="col-4 px-0 text-center">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>3 kg</p>
+                  <p class="text-estadisticas-list mx-0 text-rigth">
+                    Cant.
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>S/.10</p>
+                  <p class="text-estadisticas-list mx-0text-rigth">
+                    Precio
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>
+                    <ion-badge color="primary" style="font-size: 9px;">Pagado </ion-badge>
+                  </p>
+                  <p class="text-estadisticas-list-pago mx-0 text-rigth">
+                    Pago
+                  </p>
+                </ion-text>
+              </div>
+            </div>
+
+          </ion-label>
+        </ion-item>
+
+        <ion-item-options side="start">
+          <ion-item-option color="primary">
+            <ion-icon slot="icon-only" name="share-social"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+
+        <ion-item-options side="end">
+          <ion-item-option color="success">
+            <ion-icon name="logo-whatsapp" slot="icon-only"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+
+
+      <ion-item-sliding>
+        <ion-item button lines="none">
+          <ion-thumbnail slot="start">
+            <img src="../../../assets/images/baner01.jpg" class="img-group">
+            <!--  <ion-badge class="badge-comentarios">18</ion-badge> -->
+          </ion-thumbnail>
+
+          <ion-label>
+            <ion-text color="dark" class="ion-text-wrap">
+              <span class="text-subTitle">Carne de res</span>
+              <p class="text-list">Lorem ipsum dolor sit amet. Pellentesque eget arcu eget
+                orci placerat vulputate eu et justo.</p>
+              <ion-note class="text-list mx-0 mt-1 text-rigth">
+                <b>Entrega en 6 días</b>
+              </ion-note>
+            </ion-text>
+
+            <!-- Estadisticas -->
+            <div class="row" style="margin-top: 5px;">
+              <div class="col-4 px-0 text-center">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>10 kg</p>
+                  <p class="text-estadisticas-list mx-0 text-rigth">
+                    Cant.
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>S/.40</p>
+                  <p class="text-estadisticas-list mx-0text-rigth">
+                    Precio
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>
+                    <ion-badge color="primary" style="font-size: 9px;">Pagado </ion-badge>
+                  </p>
+                  <p class="text-estadisticas-list-pago mx-0 text-rigth">
+                    Pago
+                  </p>
+                </ion-text>
+              </div>
+            </div>
+
+          </ion-label>
+        </ion-item>
+
+        <ion-item-options side="start">
+          <ion-item-option color="primary">
+            <ion-icon slot="icon-only" name="share-social"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+
+        <ion-item-options side="end">
+          <ion-item-option color="success">
+            <ion-icon name="logo-whatsapp" slot="icon-only"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+
+
+
+      <ion-item-sliding>
+        <ion-item button lines="none">
+          <ion-thumbnail slot="start">
+            <img src="../../../assets/images/baner03.PNG" class="img-group">
+            <!--  <ion-badge class="badge-comentarios">18</ion-badge> -->
+          </ion-thumbnail>
+
+          <ion-label>
+            <ion-text color="dark" class="ion-text-wrap">
+              <span class="text-subTitle">Palta fresca</span>
+              <p class="text-list">Lorem ipsum dolor sit amet. Pellentesque eget arcu eget
+                orci placerat vulputate eu et justo.</p>
+              <ion-note class="text-list mx-0 mt-1 text-rigth">
+                <b>Entrega en 7 días</b>
+              </ion-note>
+            </ion-text>
+
+            <!-- Estadisticas -->
+            <div class="row" style="margin-top: 5px;">
+              <div class="col-4 px-0 text-center">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>2 kg</p>
+                  <p class="text-estadisticas-list mx-0 text-rigth">
+                    Cant.
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>S/.5</p>
+                  <p class="text-estadisticas-list mx-0text-rigth">
+                    Precio
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p>
+                    <ion-badge color="danger" style="font-size: 9px;">
+                      <span style="color: white;">Pendiente</span> </ion-badge>
+                  </p>
+                  <p class="text-estadisticas-list-pago mx-0 text-rigth">
+                    Pago
+                  </p>
+                </ion-text>
+              </div>
+            </div>
+
+          </ion-label>
+        </ion-item>
+
+        <ion-item-options side="start">
+          <ion-item-option color="primary">
+            <ion-icon slot="icon-only" name="share-social"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+
+        <ion-item-options side="end">
+          <ion-item-option color="success">
+            <ion-icon name="logo-whatsapp" slot="icon-only"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+
+    </div>
+
+
+
+  </div>
+
+</ion-content>
