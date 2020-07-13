@@ -1,0 +1,55 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="ion-no-border">
+    <ion-button slot="start" fill="clear" (click)="closeModal()" color="light">
+      <ion-icon name="arrow-back-outline" color="dark"></ion-icon>
+    </ion-button>
+    <ion-title class="text-center title">Solicitar pedido</ion-title>
+
+    <ion-button slot="end" fill="clear" (click)="closeModal()">
+      <ion-icon name="close" style="font-size: 30px;color: #86868678;"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+  <hr class="line">
+
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p class="pregunta text-center">¿Qué cantidad deseas solicitar?</p>
+  <div class="row px-2">
+    <div class="col-7 entrega">
+      <p class="ion-text-wrap nombre-producto">Palta Hass La Chila </p>
+      <p class="marca-condominio"> <span class="marca-producto">La Chilca </span> <br> <span class="condominio">
+          Condominio Las Gabiotas</span></p>
+    </div>
+    <div class="col-5 text-center monto">
+      <samp class="simbolo-moneda">s/</samp><samp class="precio">14.90</samp> <br>
+      <samp class="descripcion-cantidad"> x kilo</samp>
+    </div>
+  </div>
+  <p class="px-2 text-pregunta">
+    Usted será agregado(a) a la lista de compra, por favor indique la cantidad que desea adquirir
+  </p>
+
+
+  <div class="px-2">
+    <ion-item>
+      <ion-label position="floating" class="text-label">Cantidad en kilos</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+
+
+    <ion-item>
+      <ion-label position="floating" class="text-label">Descripción</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </div>
+
+  <div class="mt-4">
+    <ion-button expand="block" class="boton-solicitar">
+      <ion-icon name="cart-outline"></ion-icon> Solicitar
+    </ion-button>
+  </div>
+</ion-content>

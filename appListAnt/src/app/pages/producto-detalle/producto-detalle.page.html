@@ -15,6 +15,7 @@
     </div>
     <div class="col-10 pl-0 pr-5 text-center">
       <p class="nombre-producto">Palta Hass La Chila x kg</p>
+      
       <p class="marca-condominio"> <span class="marca-producto">La Chilca </span><span class="separador">|</span> <span
           class="condominio"> Condominio Las Gabiotas</span></p>
     </div>
@@ -54,7 +55,7 @@
 
 
     <div>
-      <ion-button expand="block" class="boton-solicitar">
+      <ion-button expand="block" class="boton-solicitar" (click)="solicitarProducto(10)">
         <ion-icon name="cart-outline"></ion-icon> Solicitar
       </ion-button>
     </div>
@@ -127,6 +128,7 @@
     </div>
   </div>
 
+  <!-- Productos recomendados -->
   <div class="pb-4 mt-4 px-2">
     <p class="ion-text-wrap mb-2" style="font-size: 14px;"> Productos <span class="text-recomend">que te pueden
         interesar</span> </p>
@@ -139,7 +141,7 @@
             <samp class=""></samp>
             <img src="../../../assets/images/baner04.PNG" class="img-producto-recomend"
               [routerLink]="['/producto-detalle']">
-            <ion-button expand="block" class="boton-solicitar-recomend">
+            <ion-button  (click)="solicitarProducto(10)" expand="block" class="boton-solicitar-recomend">
               <ion-icon name="cart-outline"></ion-icon> Solicitar
             </ion-button>
           </ion-thumbnail>

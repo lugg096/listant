@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { SolicitarComponent } from 'src/app/components/solicitar/solicitar.component';
 
 @Component({
   selector: 'app-search-groups',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchGroupsPage implements OnInit {
 
-  constructor() { }
+  constructor(private _modal: ModalController) { }
   public avatares = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1,1,1];
   ngOnInit() {
+  }
+
+  solicitarProducto(id) {
+    this._modal.create({
+      component: SolicitarComponent,
+      componentProps: {
+        idProducto: id
+      }
+    }).then((modal) => modal.present());
   }
 
 }

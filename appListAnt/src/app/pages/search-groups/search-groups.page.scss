@@ -1,11 +1,14 @@
 ion-thumbnail{
-    margin-left: -14px;
+/*     padding-top: -10px;
+    padding-bottom: 20px; */
+    margin-left: -10px;
     height: 130px;
     width: 130px;
+    margin-bottom: 20px;
 }
 
 .img-producto{
-    margin-top: -25px;
+    margin-top: -10px;
 }
 
 
@@ -51,7 +54,7 @@ ion-thumbnail{
 }
 
 .datos-producto{
-    margin-top: -8px;
+    transform: translateY(-8px);
 }
 
 .iconCard{
