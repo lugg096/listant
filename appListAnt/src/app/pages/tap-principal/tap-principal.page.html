@@ -1,41 +1,51 @@
 
 
 
-
-<ion-header class="ion-no-border">
-  <ion-toolbar class=" header">
-    <div class="row">
-    
-      <div class="col-10 titulo">
-        ListAnt
+<!-- <ion-header class="ion-no-border" style="border-bottom: 0.1px solid rgba(0, 0, 0, 0.164);"> -->
+  <!-- <ion-header>
+    <ion-toolbar class=" header">
+      <div class="row" >
+      
+        <div class="col-10 titulo">
+          ListAnt
+        </div>
+        <div class="col-1  mt-2">
+          <ion-avatar class="avatarPerfil" slot="start">
+            <img src="../../../assets/images/user01.png">
+          </ion-avatar>
+        </div>
       </div>
-      <div class="col-1  mt-2">
-        <ion-avatar class="avatarPerfil" slot="start">
-          <img src="../../../assets/images/user01.png">
-        </ion-avatar>
-      </div>
-    </div>
-  </ion-toolbar>
+    </ion-toolbar>
 
- 
-</ion-header >
+  
+  </ion-header > -->
 
 
-<ion-tabs  style="margin-top: 50px;" #myTabs (ionTabsDidChange)="getSelectedTab()">
-  <ion-tab-bar slot="top" class="tabs">
+<ion-tabs   #myTabs (ionTabsDidChange)="getSelectedTab()">
+  <ion-tab-bar slot="button" class="tabs">
     <ion-tab-button tab="listgroup" class="tab-button" >
-      <ion-icon name="people-circle" ></ion-icon>
-      <ion-label class="text-tab">GRUPOS</ion-label>
+<!--       <ion-icon name="list-circle-outline"></ion-icon> -->
+      <ion-icon name="list-circle-outline" *ngIf="page!='listgroup'"></ion-icon>
+      <ion-icon name="list-circle" *ngIf="page=='listgroup'"></ion-icon>
+      <ion-label class="text-tab">LISTAS</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="search-groups" class="tab-button">
-      <ion-icon name="search" ></ion-icon>
-        <ion-label class="text-tab">BUSCAR</ion-label>
+      <ion-icon name="cart-outline" *ngIf="page!='search-groups'"></ion-icon>
+      <ion-icon name="cart" *ngIf="page=='search-groups'"></ion-icon>
+        <ion-label class="text-tab">COMPRAR</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="notification" class="tab-button">
-      <ion-icon name="notifications" ></ion-icon>
-      <ion-label class="text-tab">NOTIFICACIONES</ion-label>
+    <ion-tab-button tab="crear-lista" class="tab-button" >
+      <ion-icon name="duplicate-outline" *ngIf="page!='crear-lista'"></ion-icon>
+      <ion-icon name="duplicate" *ngIf="page=='crear-lista'"></ion-icon>
+      <ion-label class="text-tab">VENDER</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="perfil" class="tab-button">
+       <ion-icon name="person-outline" *ngIf="page!='perfil'"></ion-icon>
+      <ion-icon name="person" *ngIf="page=='perfil'"></ion-icon>
+      <ion-label class="text-tab">USUARIO</ion-label>
     </ion-tab-button>
 
   </ion-tab-bar>

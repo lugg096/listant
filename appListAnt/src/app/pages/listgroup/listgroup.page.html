@@ -1,4 +1,20 @@
-<ion-content style="transform: translateY(-50px);">
+<!-- Header -->
+<ion-header>
+  <ion-toolbar class="header titulo">
+    Listas
+  </ion-toolbar>
+  <ion-segment (ionChange)="segmentChanged($event)" color="dark" value="pedidos">
+    <ion-segment-button value="pedidos" color="dark" select>
+      <ion-label class="text-label"> Pedidos </ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="ventas">
+      <ion-label class="text-label"> Mis Ventas</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<!-- Lista de Pedidos -->
+<ion-content *ngIf="segmentSelect=='pedidos'">
 
   <div class="recomendaciones">
     <!-- Ultimas Grupos Creados -->
@@ -64,140 +80,8 @@
   </div>
 
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button style="--background: #34cc8c;">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
   <div class="contenido">
 
-    <!-- Lista de Grupos -->
-    <div class="row">
-      <p class="text-subTitle col-8">Mis Ventas</p>
-    </div>
-
-    <!--  <div class="row">
-      <ion-searchbar inputmode="text" placeholder="Busca" mode="ios" animated class="searchBar">
-      </ion-searchbar>
-    </div> -->
-
-    <div class="card" class="ion-no-border pb-5">
-
-      <ion-item-sliding>
-        <ion-item button lines="none"  [routerLink]="['/listuser']">
-          <ion-thumbnail slot="start">
-            <img src="../../../assets/images/baner03.PNG" class="img-group">
-            <ion-badge class="badge-comentarios">18</ion-badge>
-          </ion-thumbnail>
-
-          <ion-label>
-            <ion-text color="dark" class="ion-text-wrap">
-              <span class="text-subTitle">Pechuga de Pollo</span>
-              <p class="text-list">Fecha limite para hacer pedidos hasta el día 2 Junio 2020.</p>
-            
-              <ion-note class="text-list mx-0 text-rigth">
-                <b>Entrega en 5 días</b>
-              </ion-note>
-            </ion-text>
-  
-            <div class="row" style="margin-top: 5px;">
-              <div class="col-4 px-0 text-center">
-                <ion-text color="dark" class="ion-text-wrap ion-text-center">
-                  <p><b>42</b>  kg</p>
-                  <p class="text-estadisticas-list mx-0 text-rigth">
-                    Cant.
-                  </p>
-                </ion-text>
-              </div>
-              <div class="col-4 px-0 text-center group-estadisticas">
-                <ion-text color="dark" class="ion-text-wrap ion-text-center">
-                  <p><b>83</b> </p>
-                  <p class="text-estadisticas-list mx-0text-rigth">
-                    Pedidos
-                  </p>
-                </ion-text>
-              </div>
-              <div class="col-4 px-0 text-center group-estadisticas">
-                <ion-text color="dark" class="ion-text-wrap ion-text-center">
-                  <p>
-                    <ion-badge color="danger" style="font-size: 12px;">15 </ion-badge>
-                  </p>
-                  <p class="text-estadisticas-list-pago mx-0 text-rigth">
-                    Pagos pendientes
-                  </p>
-                </ion-text>
-              </div>
-            </div>
-          </ion-label>
-        </ion-item>
-
-        <ion-item-options side="end">
-          <ion-item-option color="primary">
-            <ion-icon slot="icon-only" name="share-social"></ion-icon>
-          </ion-item-option>
-        </ion-item-options>
-      </ion-item-sliding>
-
-
-      <ion-item-sliding>
-        <ion-item button lines="none"  [routerLink]="['/listuser']">
-          <ion-thumbnail slot="start">
-            <img src="../../../assets/images/baner03.PNG" class="img-group">
-            <ion-badge class="badge-comentarios">18</ion-badge>
-          </ion-thumbnail>
-
-          <ion-label>
-            <ion-text color="dark" class="ion-text-wrap">
-              <span class="text-subTitle">Pechuga de Pollo</span>
-              <p class="text-list">Fecha limite para hacer pedidos hasta el día 2 Junio 2020.</p>
-            
-              <ion-note class="text-list mx-0 text-rigth">
-                <b>Entrega en 5 días</b>
-              </ion-note>
-            </ion-text>
-  
-            <div class="row" style="margin-top: 5px;">
-              <div class="col-4 px-0 text-center">
-                <ion-text color="dark" class="ion-text-wrap ion-text-center">
-                  <p><b>42</b>  kg</p>
-                  <p class="text-estadisticas-list mx-0 text-rigth">
-                    Cant.
-                  </p>
-                </ion-text>
-              </div>
-              <div class="col-4 px-0 text-center group-estadisticas">
-                <ion-text color="dark" class="ion-text-wrap ion-text-center">
-                  <p><b>83</b> </p>
-                  <p class="text-estadisticas-list mx-0text-rigth">
-                    Pedidos
-                  </p>
-                </ion-text>
-              </div>
-              <div class="col-4 px-0 text-center group-estadisticas">
-                <ion-text color="dark" class="ion-text-wrap ion-text-center">
-                  <p>
-                    <ion-badge color="danger" style="font-size: 12px;">15 </ion-badge>
-                  </p>
-                  <p class="text-estadisticas-list-pago mx-0 text-rigth">
-                    Pagos pendientes
-                  </p>
-                </ion-text>
-              </div>
-            </div>
-          </ion-label>
-        </ion-item>
-
-        <ion-item-options side="end">
-          <ion-item-option color="primary">
-            <ion-icon slot="icon-only" name="share-social"></ion-icon>
-          </ion-item-option>
-        </ion-item-options>
-      </ion-item-sliding>
-
-
-
-    </div>
 
 
 
@@ -260,7 +144,7 @@
       </div>
     </div> -->
 
-    <div class="card" class="ion-no-border pb-5">
+    <div class="card" class="ion-no-border">
       <ion-item-sliding>
         <ion-item button lines="none">
           <ion-thumbnail slot="start">
@@ -461,6 +345,87 @@
 
 
 
+  </div>
+
+</ion-content>
+
+<!-- Lista de Ventas -->
+<ion-content *ngIf="segmentSelect=='ventas'" class="content-ventas">
+
+  <div class=" mt-2">
+
+    <p class="text-filtro-ventas ml-2">FILTROS RÁPIDOS</p>
+    <div class="row ml-2 filtros">
+      <ion-badge color="dark" class="badge-filtros" style="background: #00da7fde; border: none; color: #fff;">TODOS</ion-badge>
+      <ion-badge color="dark" class="badge-filtros">Activos</ion-badge>
+      <ion-badge color="dark" class="badge-filtros">Inactivos</ion-badge>
+    </div>
+
+   <!--  <div class="row">
+      <ion-searchbar inputmode="text" placeholder="Busca" mode="ios" animated class="searchBar">
+      </ion-searchbar>
+    </div> -->
+
+    <div class="card" class="mb-2 mx-2" *ngFor="let venta of ventas">
+      
+      <ion-item-sliding class="card-ventas">   
+        <div class="tiempo-publicacion py-2 pl-2">DESDE <b>14 JUL. 2020</b>  - HASTA <b>13 AGO. 2020</b> </div>    
+        <ion-item button lines="none" [routerLink]="['/listuser']">
+         
+          <ion-thumbnail slot="start" class="thumbnail-ventas">
+            <img src="../../../assets/images/baner03.PNG" class="img-group">
+            <ion-badge class="badge-comentarios">18</ion-badge>
+          </ion-thumbnail>
+
+          <ion-label>
+            <ion-text color="dark" class="ion-text-wrap">
+              <span class="text-subTitle">Pechuga de Pollo</span>
+              <p class="text-list">Fecha limite para hacer pedidos hasta el día 2 Junio 2020.</p>
+
+              <ion-note class="text-list mx-0 text-rigth">
+                <b>Entrega en 5 días</b>
+              </ion-note>
+            </ion-text>
+
+            <div class="row" style="margin-top: 5px;">
+              <div class="col-4 px-0 text-center">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p><b>42kg</b> </p>
+                  <p class="text-estadisticas-list mx-0 text-rigth">
+                    Cant.
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                  <p><b>83</b> </p>
+                  <p class="text-estadisticas-list mx-0text-rigth">
+                    Pedidos
+                  </p>
+                </ion-text>
+              </div>
+              <div class="col-4 px-0 text-center group-estadisticas">
+                <ion-text color="dark" class="ion-text-wrap ion-text-center">
+                 <!--  <p>
+                    <ion-badge color="danger" style="font-size: 12px;">15 </ion-badge>
+                  </p> -->
+                  <p><b>8</b> </p>
+                  <p class="text-estadisticas-list-pago mx-0 text-rigth">
+                    Pagos pendientes
+                  </p>
+                </ion-text>
+              </div>
+            </div>
+          </ion-label>
+        </ion-item>
+
+   <!--      <ion-item-options side="end">
+          <ion-item-option color="primary">
+            <ion-icon slot="icon-only" name="share-social"></ion-icon>
+          </ion-item-option>
+        </ion-item-options> -->
+      </ion-item-sliding>
+    </div>
   </div>
 
 </ion-content>

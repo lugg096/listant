@@ -22,6 +22,14 @@ const routes: Routes = [
     path: 'producto-detalle',
     loadChildren: () => import('./pages/producto-detalle/producto-detalle.module').then( m => m.ProductoDetallePageModule)
   },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'crear-lista',
+    loadChildren: () => import('./pages/crear-lista/crear-lista.module').then( m => m.CrearListaPageModule)
+  },
 /*   {
     path: 'search-groups',
     loadChildren: () => import('./pages/search-groups/search-groups.module').then( m => m.SearchGroupsPageModule)

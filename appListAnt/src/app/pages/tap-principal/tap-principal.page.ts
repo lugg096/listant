@@ -14,6 +14,8 @@ export class TapPrincipalPage implements OnInit {
 
   constructor(private menu: MenuController) { }
 
+  public page='';
+
   openFirst() {
     this.menu.enable(true, 'first');
     this.menu.open('first');
@@ -31,10 +33,11 @@ export class TapPrincipalPage implements OnInit {
 
   ngOnInit() {
   }
+
   getSelectedTab(): void {
-    let a;
-    a = this.tabs.getSelected();
-    console.log('Mostrar',a);
+   
+    this.page = this.tabs.getSelected();
+    console.log('Mostrar',this.page);
     
 }
 

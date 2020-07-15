@@ -19,7 +19,19 @@ const routes: Routes = [
       {
         path: 'notification',
         loadChildren: () => import('../notification/notification.module').then(m => m.NotificationPageModule)
-      },/*
+      },
+      {
+        path: 'perfil',
+        loadChildren: () => import('../perfil/perfil.module').then(m => m.PerfilPageModule)
+      },
+
+      {
+        path: 'crear-lista',
+        loadChildren: () => import('../crear-lista/crear-lista.module').then(m => m.CrearListaPageModule)
+      },
+      
+      
+      /*
       {
         path: 'tab4',
         loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
